@@ -6,4 +6,5 @@ Made a calculator with JS
  - calculate on click with enter or button ' = '
  - Delete current calculate when click on back or 'c' button
 
-Made CSS with GRID
+Trainning for Js & Grid 
+

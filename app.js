@@ -56,3 +56,9 @@ const calculer = (value) => {
         }
     }
 }
+
+// window.addEventListener('error',(e)=> console.log(e))
+window.addEventListener('error',(e)=> {
+    alert('Une erreur est survenue dans votre calcul : ' + e.message);
+})
+// print error message if syntax are broken like 6+*3 = 
