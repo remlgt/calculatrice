@@ -11,12 +11,16 @@ body{
     justify-content: center;
     align-items: center;
     font-family: sans-serif;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
 }
 
 .calculator{
-    background-color: bisque;
+    background-color: #212121;
     display: flex;
     flex-direction: column;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px black;
 }
 
 .screen{
@@ -37,4 +41,31 @@ body{
     grid-template-columns: repeat(4, 50px);
     grid-template-rows: repeat(5, 50px);
     grid-gap: 7px;
+}
+
+button{
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: rgb(255, 251, 247);
+    box-shadow: 0 3px rgb(197, 197, 197);
+    font-size: 18px;
+}
+
+button:active{
+    box-shadow: 0 1px black;
+    transform: translateY(2px);
+}
+
+button[data-key="8"]{
+    background-color: rgb(230, 178, 101);
+    font-weight: bold;
+    color: aliceblue;
+}
+
+button[data-key="13"]{
+    grid-column: span 2;
+    background-color: rgb(32, 228, 32);
+    font-size: 40px;
+    color: white;
 }
